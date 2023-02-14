@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "description": "web assessment",
+      "version": "1.0.1",
+      "title": "Coding Assesment",
+      "contact": {
+        "email": "kotlachandu@gmail.com"
+      },
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "servers": [
+        {
+          "url": "/"
+        }
+      ],
+      "tags": [
+        {
+          "name": "Swagger ",
+          "description": "Example API for requesting"
+        }
+      ],
+      "paths": {
+        "/api/weather": {
+          "get": {
+            "tags": [
+              "weather"
+            ],
+            "summary": "Returns weather",
+            "responses": {
+              "200": {
+                "description": "OK"
+                
+              }
+            }
+          }
+        },
+        "/api/weather/stats": {
+            "get": {
+              "tags": [
+                "weather"
+              ],
+              "summary": "Returns weather stats",
+              "responses": {
+                "200": {
+                  "description": "OK"
+                  
+                }
+              }
+            }
+          }
+      }
+  }
